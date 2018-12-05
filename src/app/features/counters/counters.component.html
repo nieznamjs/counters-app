@@ -1,0 +1,5 @@
+<app-counter
+  class="counter"
+  *ngFor="let counter of counters, let i = index"
+  [counter]="counter"
+  (valueChanged)="changeValue($event, i)"></app-counter>
