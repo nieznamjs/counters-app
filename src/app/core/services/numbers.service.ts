@@ -7,7 +7,7 @@ import { Counter } from '../../shared/interfaces/counter.interface';
 })
 export class NumbersService {
 
-  public generateRandomNumber(): number {
+  private generateRandomNumber(): number {
     return Math.floor(Math.random() * 100 + 1);
   }
 
